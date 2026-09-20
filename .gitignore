@@ -1,0 +1,10 @@
+# Local archives (source material, not part of the site)
+*.zip
+
+# Vercel
+.vercel
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini

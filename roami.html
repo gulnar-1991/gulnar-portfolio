@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roami | Gulnar Rzayeva</title>
+  <meta name="description" content="Case study: Roami, a concept mobile app that helps people find things to do nearby and decide quickly. Designed in Figma by Gulnar Rzayeva.">
+  <meta name="theme-color" content="#F3687F">
+  <meta property="og:title" content="Roami | Gulnar Rzayeva">
+  <meta property="og:description" content="A concept app for finding things to do nearby, from research to a full prototype in three weeks.">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/anybody.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="g" viewBox="0 0 112.82 123.74">
+    <rect x="-27.65" y="50.47" width="78.12" height="22.81" transform="translate(-50.47 73.28) rotate(-90)"/>
+    <rect x="96.85" y="15.97" width="9.13" height="22.81" transform="translate(74.03 128.79) rotate(-90)"/>
+    <rect x="51.84" y="38.79" width="9.13" height="22.81" transform="translate(6.22 106.6) rotate(-90)"/>
+    <rect x="85.65" y="73.76" width="31.53" height="22.81" transform="translate(16.25 186.58) rotate(-90)"/>
+    <rect x="22.19" y="100.93" width="90.63" height="22.81"/>
+    <rect x="22.19" y="0" width="90.63" height="22.81"/>
+    <rect x="45.01" y="54.76" width="67.81" height="22.81"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#problem">Skip to the case study</a>
+
+<header class="nav" data-theme="light">
+  <a class="nav__logo" href="/" aria-label="Gulnar Rzayeva, home">
+    <svg viewBox="0 0 112.82 123.74" aria-hidden="true"><use href="#g"/></svg>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/lab">Lab</a>
+    <a class="nav__resume" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a class="pill" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="case-hero case-hero--lilac case-hero--pink case-hero--top" data-nav="light">
+    <h1><span class="line"><span>Roami</span></span></h1>
+    <p class="case-hero__sub">A concept app that helps people find things to do nearby and decide quickly.</p>
+    <dl class="meta">
+      <div><dt>My role</dt><dd>Product and UI designer</dd></div>
+      <div><dt>Type</dt><dd>Concept mobile app</dd></div>
+      <div><dt>Time</dt><dd>3 weeks</dd></div>
+      <div><dt>Tools</dt><dd>Figma</dd></div>
+    </dl>
+    <a class="btn btn--dark case-hero__btn" href="https://www.figma.com/proto/FGX5twzaNjrnqDz9B4VJoz/Hobby-app?node-id=74-349&amp;p=f&amp;viewport=-1023%2C540%2C0.37&amp;t=bON88m1OZueViG2H-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=74%3A349&amp;page-id=74%3A348" target="_blank" rel="noopener">Try the prototype</a>
+    <figure class="case-hero__img case-hero__img--white">
+      <img src="assets/img/roami-hero.webp" alt="Four Roami app screens: a splash screen and three colourful onboarding screens" width="1600" height="1200">
+    </figure>
+  </section>
+
+  <section class="case-block case-block--concrete" id="problem" data-nav="light">
+    <div class="case-grid">
+      <div class="case-grid__head"><h2 class="case-h2">Finding something to do should not feel like work.</h2></div>
+      <div class="case-grid__body">
+        <p class="case-p">I started by exploring Hobbie, an app for finding activities. I found three problems in the first-time experience:</p>
+        <ul class="case-list">
+          <li>The onboarding did not explain the value of the app.</li>
+          <li>The map felt secondary and hard to use.</li>
+          <li>Discovery relied on browsing, with no clear categories.</li>
+        </ul>
+        <p class="case-p">This makes discovery confusing, especially for new users. I looked at Canoo and Google Maps for direction.</p>
+        <p class="case-p"><strong>My goal:</strong> make finding activities simple and natural, so people get quick inspiration without information overload.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-block case-block--ink" data-nav="dark">
+    <div class="case-grid" style="margin-bottom: clamp(56px, 10vh, 110px)">
+      <div class="case-grid__head"><h2 class="case-h2">Three decisions to make discovery easier.</h2></div>
+    </div>
+
+    <div class="decision case-grid">
+      <div class="case-grid__head">
+        <h3 class="case-h2">Clear onboarding</h3>
+        <p class="case-p" style="margin-top: 1em">Three short screens explain the app: discover nearby activities, book in seconds, explore your way. Nothing extra, so people feel confident before they start.</p>
+      </div>
+      <div class="case-grid__body"><figure class="shot"><img src="assets/img/roami-onboarding.webp" alt="Roami onboarding screens and the home screen" width="1400" height="1081" loading="lazy"></figure></div>
+    </div>
+
+    <div class="decision case-grid">
+      <div class="case-grid__head">
+        <h3 class="case-h2">Interest-based setup</h3>
+        <p class="case-p" style="margin-top: 1em">People pick the categories they like first. Then the app shows a focused list instead of every possible option.</p>
+      </div>
+      <div class="case-grid__body"><figure class="shot"><img src="assets/img/roami-category.webp" alt="Roami category selection screens with interest tags" width="1400" height="1188" loading="lazy"></figure></div>
+    </div>
+
+    <div class="decision case-grid">
+      <div class="case-grid__head">
+        <h3 class="case-h2">Map and list, together</h3>
+        <p class="case-p" style="margin-top: 1em">People can switch between the map and activity cards. The map shows what is nearby. The cards make it easy to scan and compare.</p>
+      </div>
+      <div class="case-grid__body"><figure class="shot"><img src="assets/img/roami-map.webp" alt="Roami map view, place details and filter screens" width="1400" height="1050" loading="lazy"></figure></div>
+    </div>
+  </section>
+
+  <section class="case-block case-block--chalk" data-nav="light">
+    <div class="case-grid">
+      <div class="case-grid__head"><h2 class="case-h2">From a Hobbie review to a full mobile flow.</h2></div>
+      <div class="case-grid__body">
+        <p class="case-p">I designed the whole flow: onboarding, category selection, home, map and booking. Canoo also showed me how to use a dark background without hurting readability.</p>
+      </div>
+    </div>
+    <ol class="steps">
+      <li><h3>Research</h3><p>Studied how people find activities in existing apps, and where they get stuck.</p></li>
+      <li><h3>Flow</h3><p>Defined a simple journey: discover, explore, save, decide.</p></li>
+      <li><h3>Wireframe</h3><p>Tested structure, hierarchy and navigation in low fidelity.</p></li>
+      <li><h3>Design</h3><p>Built clean screens with strong imagery, then refined the transitions and actions.</p></li>
+    </ol>
+    <div class="pair">
+      <figure><img src="assets/img/roami-flow.webp" alt="User flow diagram from start to booking" width="1170" height="578" loading="lazy"><figcaption>User flow</figcaption></figure>
+      <figure><img src="assets/img/roami-wireframes.webp" alt="Low-fidelity wireframes of the Roami screens" width="1008" height="995" loading="lazy"><figcaption>Wireframes</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="case-block case-block--concrete" data-nav="light">
+    <div class="case-grid">
+      <div class="case-grid__head">
+        <h2 class="case-h2">Checking the idea with a persona.</h2>
+        <p class="case-p" style="margin-top: 1em">I created Sophie Chen, 35, a content creator in Toronto. She finds new places online, but struggles to choose and organize them. Her needs pointed to four things:</p>
+        <ul class="case-list">
+          <li>Visual content works better than text-heavy lists.</li>
+          <li>Saving options is essential.</li>
+          <li>Too many filters reduce engagement.</li>
+          <li>Fast, simple navigation is critical.</li>
+        </ul>
+        <p class="case-p"><strong>These findings shaped the simple structure and the card-based design.</strong></p>
+      </div>
+      <div class="case-grid__body"><figure class="shot shot--white"><img src="assets/img/roami-persona.webp" alt="User persona for Sophie Chen, a 35-year-old content creator in Toronto" width="1295" height="1166" loading="lazy"></figure></div>
+    </div>
+  </section>
+
+  <section class="case-block case-block--ink" data-nav="dark">
+    <div class="case-grid" style="margin-bottom: clamp(40px, 7vh, 80px)">
+      <div class="case-grid__head"><h2 class="case-h2">See it in motion.</h2></div>
+      <div class="case-grid__body">
+        <p class="case-p">This is the clickable prototype. Open it in Figma to try the full flow yourself.</p>
+        <p style="margin-top: 24px"><a class="btn btn--light" style="margin-top:0" href="https://www.figma.com/proto/FGX5twzaNjrnqDz9B4VJoz/Hobby-app?node-id=74-349&amp;p=f&amp;viewport=-1023%2C540%2C0.37&amp;t=bON88m1OZueViG2H-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=74%3A349&amp;page-id=74%3A348" target="_blank" rel="noopener">Try the prototype</a></p>
+      </div>
+    </div>
+    <div class="demo">
+      <video data-autoplay muted loop playsinline preload="none" poster="assets/img/roami-poster.webp" aria-label="Screen recording of the Roami prototype: onboarding, sign in, home, map and filters">
+        <source src="assets/roami-prototype.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="case-block case-block--chalk" data-nav="light">
+    <div class="case-grid" style="margin-bottom: clamp(40px, 7vh, 80px)">
+      <div class="case-grid__head"><h2 class="case-h2">A small design system keeps it consistent.</h2></div>
+      <div class="case-grid__body">
+        <p class="case-p">Colours, type and spacing are set as variables, so one change updates every screen. Cards, buttons, navigation and category tags are reusable components that follow the same rules.</p>
+      </div>
+    </div>
+    <div class="trio">
+      <figure><img src="assets/img/roami-components.webp" alt="Roami component library in Figma" width="1400" height="1303" loading="lazy"><figcaption>Components</figcaption></figure>
+      <figure><img src="assets/img/roami-variables.webp" alt="Roami colour variables in Figma" width="1400" height="719" loading="lazy"><figcaption>Variables</figcaption></figure>
+      <figure><img src="assets/img/roami-styles.webp" alt="Roami text styles and colour styles" width="335" height="640" loading="lazy"><figcaption>Text styles</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="case-block case-block--concrete" data-nav="light">
+    <div class="case-grid">
+      <div class="case-grid__head"><h2 class="case-h2">From "I don't know where to go" to "I found something".</h2></div>
+      <div class="case-grid__body">
+        <p class="case-p">Most discovery apps focus on either maps or reviews. Roami brings inspiration, organization and decision-making into one simple flow, in just a few steps.</p>
+        <p class="case-p"><strong>What this shows:</strong> I can take an idea from research to a full prototype and design system in three weeks. Next, I would test it with real users.</p>
+        <p style="margin-top: clamp(28px, 5vh, 48px); display: flex; gap: 12px; flex-wrap: wrap">
+          <a class="btn btn--dark" style="margin-top:0" href="https://www.figma.com/proto/FGX5twzaNjrnqDz9B4VJoz/Hobby-app?node-id=74-349&amp;p=f&amp;viewport=-1023%2C540%2C0.37&amp;t=bON88m1OZueViG2H-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=74%3A349&amp;page-id=74%3A348" target="_blank" rel="noopener">Try the prototype</a>
+          <a class="btn btn--outline" style="margin-top:0" href="/#work">Back to all work</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" data-nav="light">
+    <p class="contact__lead">I'm open to AI creative technologist, forward deployed creative and AI product design roles, and to collaborations.</p>
+    <a class="cta" id="cta" href="mailto:gulnar.rza.e@gmail.com?subject=Hello%20Gulnar"><span>Get in touch</span></a>
+    <p class="contact__mail">Or email me directly at <a href="mailto:gulnar.rza.e@gmail.com">gulnar.rza.e@gmail.com</a></p>
+
+    <footer class="footer">
+      <svg viewBox="0 0 112.82 123.74" aria-hidden="true"><use href="#g"/></svg>
+      <p>&copy; 2026 Gulnar Rzayeva</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </section>
+
+</main>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span>View</span></div>
+
+</body>
+</html>
