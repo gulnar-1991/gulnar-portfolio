@@ -371,4 +371,37 @@
   addEventListener('scroll', onScroll, { passive: true });
   addEventListener('resize', onScroll);
   updateNavTheme(); updateStatement(); updateStack();
+
+  /* ---------- Contact form ---------- */
+  const cform = $('#contactForm');
+  if (cform) {
+    const status = $('#cformStatus');
+    const submit = $('button[type="submit"]', cform);
+
+    cform.addEventListener('submit', async e => {
+      e.preventDefault();
+      status.className = 'cform__status';
+      status.textContent = 'Sending…';
+      submit.disabled = true;
+
+      try {
+        const payload = Object.fromEntries(new FormData(cform));
+        const res = await fetch(cform.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || !out.success) throw new Error(out.message || 'Request failed');
+        cform.reset();
+        status.classList.add('is-ok');
+        status.textContent = 'Thank you — your message is on its way.';
+      } catch (err) {
+        status.classList.add('is-err');
+        status.textContent = 'That did not send. Please email gulnar.rza.e@gmail.com directly.';
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  }
 })();
