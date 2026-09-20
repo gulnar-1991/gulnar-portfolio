@@ -467,7 +467,7 @@ html.js .statement__text .w.on { color: var(--ink); }
 .cta:hover::before, .cta:focus-visible::before { transform: translate(-50%, -50%) scale(1); }
 
 /* ---------- Contact form ---------- */
-.cform { margin-top: clamp(40px, 7vh, 72px); max-width: 660px; }
+.cform { margin-top: clamp(40px, 7vh, 72px); max-width: 660px; scroll-margin-top: calc(var(--nav-h) + 24px); }
 .cform__bot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .cform__row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .cform__field { display: block; margin-top: 20px; }

@@ -378,6 +378,18 @@
     const status = $('#cformStatus');
     const submit = $('button[type="submit"]', cform);
 
+    // The giant "Get in touch" button sends people to the form.
+    const cta = $('#cta');
+    if (cta && cta.getAttribute('href') === '#contactForm') {
+      cta.addEventListener('click', e => {
+        e.preventDefault();
+        cform.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+        const first = $('#cf-name', cform);
+        if (reduce) { first.focus(); return; }
+        setTimeout(() => first.focus({ preventScroll: true }), 520);
+      });
+    }
+
     cform.addEventListener('submit', async e => {
       e.preventDefault();
       status.className = 'cform__status';
