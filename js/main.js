@@ -378,15 +378,27 @@
     const status = $('#cformStatus');
     const submit = $('button[type="submit"]', cform);
 
-    // The giant "Get in touch" button sends people to the form.
+    // The giant "Get in touch" button opens the form in a dialog.
+    const modal = $('#contactModal');
     const cta = $('#cta');
-    if (cta && cta.getAttribute('href') === '#contactForm') {
+    if (modal && cta && typeof modal.showModal === 'function') {
       cta.addEventListener('click', e => {
         e.preventDefault();
-        cform.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
-        const first = $('#cf-name', cform);
-        if (reduce) { first.focus(); return; }
-        setTimeout(() => first.focus({ preventScroll: true }), 520);
+        status.textContent = '';
+        status.className = 'cform__status';
+        modal.showModal();
+        $('#cf-name', cform).focus();
+      });
+
+      const closeBtn = $('#cmodalClose');
+      if (closeBtn) closeBtn.addEventListener('click', () => modal.close());
+
+      // A click outside the panel closes it. Escape is handled by <dialog>.
+      modal.addEventListener('click', e => {
+        const r = modal.getBoundingClientRect();
+        const inside = e.clientX >= r.left && e.clientX <= r.right &&
+                       e.clientY >= r.top && e.clientY <= r.bottom;
+        if (!inside) modal.close();
       });
     }
 
