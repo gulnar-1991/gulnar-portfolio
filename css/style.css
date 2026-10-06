@@ -164,6 +164,7 @@ section[id] { scroll-margin-top: 0; }
 }
 .hero__title .line:nth-child(2) > span { --i: 1; }
 .hero__title .line:nth-child(3) > span { --i: 2; }
+.hero__title .line:nth-child(4) > span { --i: 3; }
 
 @keyframes rise {
   to { transform: translateY(0); font-stretch: 72%; }
